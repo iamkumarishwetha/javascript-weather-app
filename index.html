@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script defer src="js/skycons.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <canvas id="icon" width="64" height="64">
+                </canvas>
+            </div>
+        </div>
+        <div class="content">
+            <div class="general-information">
+                <div class="status" data-location>Enter A Location</div>
+                <div class="location" data-status>To Find The Weather</div>
+            </div>
+            <div class="detail-section">
+                <div class="detail">
+                    <div class="title">Wind (in m/s)</div>
+                    <div class="value" data-wind>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Temperature (in &#8451;)</div>
+                    <div class="value" data-temperature>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Humidity (in %)</div>
+                    <div class="value" data-humidity>TBD</div>
+                </div>
+            </div>
+            <div class="city-search-container">
+                <form id="search-form">
+                    <input type="text" class="city-search" placeholder="Enter Location" data-city-search>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
